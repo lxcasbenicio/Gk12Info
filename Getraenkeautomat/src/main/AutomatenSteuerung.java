@@ -35,6 +35,16 @@ public class AutomatenSteuerung {
 				automat.setButtonEnabled("50CT", true);
 				automat.setButtonEnabled("RK", true);
 				break;
+				
+			// 50CT-Knopf
+			case "50CT":
+				automat.setZustand(1);
+				automat.setBetrag(betrag + 5);
+				automat.setButtonEnabled("2EUR", true);
+				automat.setButtonEnabled("1EUR", true);
+				automat.setButtonEnabled("50CT", true);
+				automat.setButtonEnabled("RK", true);
+				break;
 
 			// Default-Fall für die Eingabe im Zustand 0: Es passiert nichts.
 			default:
