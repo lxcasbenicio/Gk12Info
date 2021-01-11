@@ -54,8 +54,9 @@ public class AutomatenSteuerung {
 		// Zustand 1: Geld eingeworfen, Betrag = 0.50
 		case 1:
 			switch (eingabe) {
-			case "":
-				
+			case "1":
+				automat.getBetrag("1EUR", true);
+				automat.getEingabe("RK", true);
 				break;
 
 			default:
